@@ -1,6 +1,9 @@
 import express from 'express';
 import { buscarUfs, buscarUfPorNome, buscarUfPorId } from './servicos/servico.js';
+import cors from 'cors'
 const app = express();
+
+app.use(cors());
 
 
 
